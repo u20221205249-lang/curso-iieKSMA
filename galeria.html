@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | Introducción a la Ingeniería Electrónica (IIE)</title>
+  <meta name="description" content="Registro fotográfico de las sesiones de robótica, los montajes con Arduino y la competencia de robots del curso.">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Universidad Surcolombiana — Facultad de Ingeniería">
+        <span class="brand-text">
+          <span class="brand-course">Introducción a la Ingeniería Electrónica</span>
+          <span class="brand-sub">Ingeniería Electrónica · BEINEL54</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Menú principal">
+        <ul class="nav-list">
+          <li class="has-submenu">
+            <a class="nav-link" href="index.html">Inicio <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="index.html#presentacion">Presentación<span class="submenu-desc">De qué trata el curso</span></a></li>
+              <li><a href="index.html#ruta">Ruta del estudiante<span class="submenu-desc">LEGO · Arduino · PCB · Proyecto</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="curso.html">Curso <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="curso.html#informacion">Información<span class="submenu-desc">Código, créditos, horas</span></a></li>
+              <li><a href="curso.html#competencias">Competencias<span class="submenu-desc">Alineadas con ABET</span></a></li>
+              <li><a href="curso.html#resultados">Resultados de aprendizaje<span class="submenu-desc">RA1, RA2 y RA3</span></a></li>
+              <li><a href="curso.html#evaluacion">Evaluación<span class="submenu-desc">Niveles de desempeño</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="cdio.html">CDIO <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="cdio.html#concebir">Concebir<span class="submenu-desc">Entender el reto</span></a></li>
+              <li><a href="cdio.html#disenar">Diseñar<span class="submenu-desc">Planear la solución</span></a></li>
+              <li><a href="cdio.html#implementar">Implementar<span class="submenu-desc">Construir el prototipo</span></a></li>
+              <li><a href="cdio.html#operar">Operar<span class="submenu-desc">Probar y competir</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="unidades.html">Unidades <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="unidades.html#unidad-1">1. LEGO<span class="submenu-desc">Fundamentos y lógica</span></a></li>
+              <li><a href="unidades.html#unidad-2">2. Arduino<span class="submenu-desc">Sistemas embebidos</span></a></li>
+              <li><a href="unidades.html#unidad-3">3. PCB<span class="submenu-desc">Diseño y manufactura</span></a></li>
+              <li><a href="unidades.html#unidad-4">4. Proyecto Integrador<span class="submenu-desc">Integración final</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="recursos.html">Recursos <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="recursos.html#talleres">Talleres<span class="submenu-desc">Guías descargables</span></a></li>
+              <li><a href="recursos.html#arduino">Arduino<span class="submenu-desc">Referencia rápida</span></a></li>
+              <li><a href="recursos.html#tutoriales-arduino">Tutoriales Arduino<span class="submenu-desc">20 lecciones complementarias</span></a></li>
+              <li><a href="recursos.html#lego">Inventario LEGO<span class="submenu-desc">Kit EV3 y costos</span></a></li>
+              <li><a href="recursos.html#simulacion">Simulación<span class="submenu-desc">Tinkercad y Open Roberta</span></a></li>
+              <li><a href="recursos.html#pcb">PCB<span class="submenu-desc">Herramientas EDA</span></a></li>
+              <li><a href="galeria.html">Galería<span class="submenu-desc">Fotos del curso</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="proyectos.html">Proyectos <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="proyectos.html#retos">Retos<span class="submenu-desc">Seguidor de línea velocista</span></a></li>
+              <li><a href="proyectos.html#integrador">Proyecto Integrador<span class="submenu-desc">Ventilación automatizada</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Inicio</a> · <a href="recursos.html">Recursos</a> · Galería</p>
+        <span class="eyebrow">Registro fotográfico</span>
+        <h1>Galería del curso</h1>
+        <p class="lead">Sesiones de robótica, montajes con Arduino y la jornada de competencia en la Facultad de Ingeniería.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <p class="small">Selecciona una imagen para ampliarla. Usa las flechas del teclado para navegar y la tecla Escape para cerrar.</p>
+
+        <div class="gallery-grid">
+          <a href="assets/img/galeria1.jpg" data-lightbox data-caption="Trabajo en equipo: programación por bloques y pruebas sobre la pista">
+            <img src="assets/img/galeria1.jpg" alt="Dos estudiantes programando un robot mientras prueban el recorrido en la pista" loading="lazy">
+          </a>
+          <a href="assets/img/galeria2.jpg" data-lightbox data-caption="Robot LEGO Mindstorms EV3 con sensor ultrasónico y sensor de color">
+            <img src="assets/img/galeria2.jpg" alt="Robot construido con piezas LEGO Mindstorms EV3 sobre una mesa" loading="lazy">
+          </a>
+          <a href="assets/img/galeria3.jpg" data-lightbox data-caption="Montaje en protoboard con Arduino Uno, LEDs y sensor de temperatura y humedad">
+            <img src="assets/img/galeria3.jpg" alt="Circuito armado en protoboard con placa Arduino Uno y sensor DHT11" loading="lazy">
+          </a>
+          <a href="assets/img/galeria4.jpg" data-lightbox data-caption="Competencia de robots seguidores de línea en la Facultad de Ingeniería">
+            <img src="assets/img/galeria4.jpg" alt="Grupo numeroso de estudiantes alrededor de la pista durante la competencia" loading="lazy">
+          </a>
+          <a href="assets/img/galeria5.jpg" data-lightbox data-caption="Ronda de competencia sobre el circuito de línea negra">
+            <img src="assets/img/galeria5.jpg" alt="Estudiantes sentados alrededor de la pista observando el recorrido del robot" loading="lazy">
+          </a>
+          <a href="assets/img/galeria6.jpg" data-lightbox data-caption="Robot velocista recorriendo el circuito">
+            <img src="assets/img/galeria6.jpg" alt="Robot EV3 siguiendo la línea negra sobre la pista blanca" loading="lazy">
+          </a>
+          <a href="assets/img/galeria7.jpg" data-lightbox data-caption="Pruebas simultáneas de dos equipos en pistas independientes">
+            <img src="assets/img/galeria7.jpg" alt="Estudiante ajustando el programa mientras dos robots recorren sus pistas" loading="lazy">
+          </a>
+          <a href="assets/img/facultad.jpg" data-lightbox data-caption="Facultad de Ingeniería, Universidad Surcolombiana, Neiva">
+            <img src="assets/img/facultad.jpg" alt="Entrada principal de la Facultad de Ingeniería" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+      <button class="lightbox-close" type="button" aria-label="Cerrar">&times;</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Imagen anterior">&#8249;</button>
+      <img src="" alt="">
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Imagen siguiente">&#8250;</button>
+      <p class="lightbox-caption"></p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <img src="assets/img/logo.png" alt="">
+              <span class="footer-brand-text">Universidad Surcolombiana<br>Facultad de Ingeniería</span>
+            </div>
+            <p>Curso Introducción a la Ingeniería Electrónica (IIE), código BEINEL54. Programa de Ingeniería Electrónica, primer semestre. Curso estructurado bajo el Estándar 4 de la iniciativa CDIO.</p>
+            <p class="small">Docente: Diego Sendoya · Neiva, Huila, Colombia</p>
+          </div>
+
+          <div>
+            <h4>Navegación</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="curso.html">Sobre el curso</a></li>
+              <li><a href="cdio.html">Metodología CDIO</a></li>
+              <li><a href="unidades.html">Unidades temáticas</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Material</h4>
+            <ul class="footer-links">
+              <li><a href="recursos.html#talleres">Talleres de Arduino</a></li>
+              <li><a href="recursos.html#lego">Inventario LEGO EV3</a></li>
+              <li><a href="proyectos.html">Retos y proyectos</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© <span data-year>2026</span> Universidad Surcolombiana · Facultad de Ingeniería</p>
+      <p>Sitio web elaborado por Sofía Claros - María Magdalena</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

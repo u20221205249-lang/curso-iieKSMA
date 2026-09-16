@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retos y proyectos | Introducción a la Ingeniería Electrónica (IIE)</title>
+  <meta name="description" content="Reto del robot seguidor de línea velocista con LEGO EV3 y proyecto integrador de sistema móvil de ventilación automatizada.">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Universidad Surcolombiana — Facultad de Ingeniería">
+        <span class="brand-text">
+          <span class="brand-course">Introducción a la Ingeniería Electrónica</span>
+          <span class="brand-sub">Ingeniería Electrónica · BEINEL54</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Menú principal">
+        <ul class="nav-list">
+          <li class="has-submenu">
+            <a class="nav-link" href="index.html">Inicio <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="index.html#presentacion">Presentación<span class="submenu-desc">De qué trata el curso</span></a></li>
+              <li><a href="index.html#ruta">Ruta del estudiante<span class="submenu-desc">LEGO · Arduino · PCB · Proyecto</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="curso.html">Curso <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="curso.html#informacion">Información<span class="submenu-desc">Código, créditos, horas</span></a></li>
+              <li><a href="curso.html#competencias">Competencias<span class="submenu-desc">Alineadas con ABET</span></a></li>
+              <li><a href="curso.html#resultados">Resultados de aprendizaje<span class="submenu-desc">RA1, RA2 y RA3</span></a></li>
+              <li><a href="curso.html#evaluacion">Evaluación<span class="submenu-desc">Niveles de desempeño</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="cdio.html">CDIO <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="cdio.html#concebir">Concebir<span class="submenu-desc">Entender el reto</span></a></li>
+              <li><a href="cdio.html#disenar">Diseñar<span class="submenu-desc">Planear la solución</span></a></li>
+              <li><a href="cdio.html#implementar">Implementar<span class="submenu-desc">Construir el prototipo</span></a></li>
+              <li><a href="cdio.html#operar">Operar<span class="submenu-desc">Probar y competir</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="unidades.html">Unidades <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="unidades.html#unidad-1">1. LEGO<span class="submenu-desc">Fundamentos y lógica</span></a></li>
+              <li><a href="unidades.html#unidad-2">2. Arduino<span class="submenu-desc">Sistemas embebidos</span></a></li>
+              <li><a href="unidades.html#unidad-3">3. PCB<span class="submenu-desc">Diseño y manufactura</span></a></li>
+              <li><a href="unidades.html#unidad-4">4. Proyecto Integrador<span class="submenu-desc">Integración final</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="recursos.html">Recursos <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="recursos.html#talleres">Talleres<span class="submenu-desc">Guías descargables</span></a></li>
+              <li><a href="recursos.html#arduino">Arduino<span class="submenu-desc">Referencia rápida</span></a></li>
+              <li><a href="recursos.html#tutoriales-arduino">Tutoriales Arduino<span class="submenu-desc">20 lecciones complementarias</span></a></li>
+              <li><a href="recursos.html#lego">Inventario LEGO<span class="submenu-desc">Kit EV3 y costos</span></a></li>
+              <li><a href="recursos.html#simulacion">Simulación<span class="submenu-desc">Tinkercad y Open Roberta</span></a></li>
+              <li><a href="recursos.html#pcb">PCB<span class="submenu-desc">Herramientas EDA</span></a></li>
+              <li><a href="galeria.html">Galería<span class="submenu-desc">Fotos del curso</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="proyectos.html">Proyectos <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="proyectos.html#retos">Retos<span class="submenu-desc">Seguidor de línea velocista</span></a></li>
+              <li><a href="proyectos.html#integrador">Proyecto Integrador<span class="submenu-desc">Ventilación automatizada</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Inicio</a> · Proyectos</p>
+        <span class="eyebrow">Aprendizaje basado en retos y proyectos</span>
+        <h1>Retos y proyectos</h1>
+        <p class="lead">Los dos trabajos de equipo que estructuran el semestre: el reto del robot velocista y el proyecto integrador final.</p>
+      </div>
+    </section>
+
+    <!-- ===================== RETOS ===================== -->
+    <section id="retos">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Reto 1</span>
+          <h2>Robot seguidor de línea, categoría velocista</h2>
+          <p>Diseñar, construir y poner en operación un robot seguidor de línea con kits LEGO Mindstorms EV3, aplicando el ciclo CDIO completo. Gana el robot que complete el recorrido en el menor tiempo manteniendo el seguimiento correcto de la línea.</p>
+        </div>
+
+        <div class="grid grid-2" style="align-items:start">
+          <figure style="margin:0">
+            <div class="figure-frame">
+              <img src="assets/img/galeria6.jpg" alt="Robot EV3 recorriendo la pista de línea negra"
+                   loading="lazy" width="1400" height="932">
+            </div>
+            <figcaption class="small" style="margin-top:8px">Robot velocista sobre la pista de competencia.</figcaption>
+          </figure>
+
+          <div>
+            <div class="card" style="margin-bottom:18px">
+              <h3>Restricciones del robot</h3>
+              <ul class="small mb-0">
+                <li>Debe caber completamente dentro de un área máxima de 20 cm × 20 cm.</li>
+                <li>Ninguna parte puede sobresalir de esas dimensiones al inicio de la competencia.</li>
+                <li>El cumplimiento se verifica antes de la etapa de operación.</li>
+                <li>Se evalúa la optimización de recursos bajo criterio de relación calidad–precio.</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Organización</h3>
+              <ul class="small mb-0">
+                <li>41 estudiantes organizados en 8 equipos.</li>
+                <li>5 integrantes por equipo.</li>
+                <li>Un kit LEGO EV3 asignado por equipo.</li>
+                <li>Duración: 4 semanas.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="margin-top:36px">Las cuatro etapas del reto</h3>
+        <div class="grid grid-4">
+          <div class="card">
+            <span class="tag tag-amber">Semana 1</span>
+            <h4>Concebir</h4>
+            <p class="small mb-0">Documento de concepción con integrantes, roles, comprensión del reto, restricciones y estrategia.</p>
+          </div>
+          <div class="card">
+            <span class="tag tag-azure">Semana 2</span>
+            <h4>Diseñar</h4>
+            <p class="small mb-0">Diseño digital en Studio 2.0, render, lista de piezas, tabla de costos y programa en bloques.</p>
+          </div>
+          <div class="card">
+            <span class="tag tag-ivy">Semana 3</span>
+            <h4>Implementar</h4>
+            <p class="small mb-0">Ensamble físico del robot, ajustes mecánicos y verificación de dimensiones.</p>
+          </div>
+          <div class="card">
+            <span class="tag tag-garnet">Semana 4</span>
+            <h4>Operar</h4>
+            <p class="small mb-0">Calibración del sensor y competencia de velocidad sobre la pista.</p>
+          </div>
+        </div>
+
+        <p style="margin-top:24px">
+          <a class="btn btn-primary btn-sm" href="assets/docs/guia-proyecto-robot-seguidor-linea.pdf" download>Descargar la guía completa del reto</a>
+          <a class="btn btn-ghost btn-sm" href="cdio.html">Ver el detalle de cada etapa</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== PROYECTO INTEGRADOR ===================== -->
+    <section id="integrador" class="alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Proyecto final</span>
+          <h2>Sistema móvil de ventilación automatizada</h2>
+          <p>Diseñar e integrar dos sistemas tecnológicos independientes, Arduino y LEGO Mindstorms, para resolver un problema de control ambiental.</p>
+        </div>
+
+        <div class="card" style="margin-bottom:26px">
+          <h3>El problema</h3>
+          <p class="small mb-0">En una planta industrial existen zonas que sufren sobrecalentamiento ocasional. En lugar de instalar ventilación fija costosa, se requiere un robot patrullero que solo se active cuando una estación fija de monitoreo detecte que la temperatura ha superado un umbral crítico.</p>
+        </div>
+
+        <div class="accordion">
+          <div class="acc-item">
+            <button class="acc-trigger" type="button">
+              <span><span class="acc-tag">Etapa I</span>Diseño y simulación en Arduino</span>
+              <span class="acc-plus" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel"><div class="acc-panel-inner">
+              <p class="small">Antes de la implementación física, cada equipo valida su circuito en Tinkercad.</p>
+              <ul class="small mb-0">
+                <li><strong>Entrada:</strong> sensor de temperatura, TMP36 en Tinkercad o DHT11 en el montaje físico.</li>
+                <li><strong>Procesamiento:</strong> el Arduino calcula un umbral dinámico de temperatura base más 3 °C.</li>
+                <li><strong>Salida:</strong> un servomotor que actúa como barrera, cerrado a 90° y abierto a 0°, y un sistema de indicación con LEDs, verde para estado normal y rojo para alerta.</li>
+              </ul>
+            </div></div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-trigger" type="button">
+              <span><span class="acc-tag">Etapa II</span>Construcción del vehículo con LEGO Mindstorms</span>
+              <span class="acc-plus" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel"><div class="acc-panel-inner">
+              <p class="small">El robot debe navegar de forma autónoma siguiendo una ruta predefinida.</p>
+              <ul class="small mb-0">
+                <li><strong>Navegación:</strong> algoritmo de seguidor de línea usando el sensor de color.</li>
+                <li><strong>Mecanismo de activación:</strong> el robot inicia su marcha solo cuando su sensor ultrasónico detecta que la barrera del Arduino se ha levantado.</li>
+                <li><strong>Actuador de ventilación:</strong> un tercer motor con aspas simula la disipación de calor en puntos específicos de la ruta.</li>
+              </ul>
+            </div></div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-trigger" type="button">
+              <span><span class="acc-tag">Etapa III</span>Integración y comunicación física</span>
+              <span class="acc-plus" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel"><div class="acc-panel-inner">
+              <p class="small">En ingeniería, sistemas de marcas distintas a menudo deben entenderse entre sí. Aquí la comunicación es física.</p>
+              <ul class="small mb-0">
+                <li><strong>La interfaz:</strong> el servomotor del Arduino sostiene una paleta de cartón.</li>
+                <li><strong>El protocolo:</strong> si la paleta está abajo, el robot LEGO detecta un obstáculo a 10 cm y permanece en espera; si la paleta sube, detecta camino libre y arranca.</li>
+              </ul>
+            </div></div>
+          </div>
+
+          <div class="acc-item">
+            <button class="acc-trigger" type="button">
+              <span><span class="acc-tag">Etapa IV</span>Calibración y pruebas</span>
+              <span class="acc-plus" aria-hidden="true"></span>
+            </button>
+            <div class="acc-panel"><div class="acc-panel-inner">
+              <p class="small">Sesión de calibración obligatoria antes de la entrega final.</p>
+              <ul class="small mb-0">
+                <li><strong>Calibración lumínica:</strong> ajustar los valores de blanco y negro del sensor LEGO según la iluminación del salón.</li>
+                <li><strong>Calibración térmica:</strong> programar el Arduino para que tome la temperatura ambiente al encenderse en lugar de usar un valor estático, evitando errores por clima.</li>
+                <li><strong>Prueba de histéresis:</strong> asegurar que el servo no oscile cuando la temperatura está justo en el límite.</li>
+              </ul>
+            </div></div>
+          </div>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:32px">
+          <div class="card">
+            <h3>Informe final</h3>
+            <p class="small">Para la aprobación del proyecto se entrega un informe técnico que incluye:</p>
+            <ul class="small mb-0">
+              <li>Diagrama de bloques con la representación del flujo de señales.</li>
+              <li>Esquemático electrónico realizado en Tinkercad o Fritzing.</li>
+              <li>Código comentado, explicando el uso de las librerías <code>DHT.h</code> y <code>Servo.h</code>.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Criterios de evaluación</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th scope="col">Criterio</th><th scope="col">Peso</th></tr></thead>
+                <tbody>
+                  <tr><td>Simulación correcta: validación en Tinkercad</td><td>20 %</td></tr>
+                  <tr><td>Integración física: apertura de la barrera y salida del robot</td><td>30 %</td></tr>
+                  <tr><td>Navegación: seguir la línea y ventilar</td><td>30 %</td></tr>
+                  <tr><td>Informe técnico: documentación y análisis de resultados</td><td>20 %</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top:24px"><a class="btn btn-primary btn-sm" href="assets/docs/guia-proyecto-final-integrador.pdf" download>Descargar la guía del proyecto integrador</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <img src="assets/img/logo.png" alt="">
+              <span class="footer-brand-text">Universidad Surcolombiana<br>Facultad de Ingeniería</span>
+            </div>
+            <p>Curso Introducción a la Ingeniería Electrónica (IIE), código BEINEL54. Programa de Ingeniería Electrónica, primer semestre. Curso estructurado bajo el Estándar 4 de la iniciativa CDIO.</p>
+            <p class="small">Docente: Diego Sendoya · Neiva, Huila, Colombia</p>
+          </div>
+
+          <div>
+            <h4>Navegación</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="curso.html">Sobre el curso</a></li>
+              <li><a href="cdio.html">Metodología CDIO</a></li>
+              <li><a href="unidades.html">Unidades temáticas</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Material</h4>
+            <ul class="footer-links">
+              <li><a href="recursos.html#talleres">Talleres de Arduino</a></li>
+              <li><a href="recursos.html#lego">Inventario LEGO EV3</a></li>
+              <li><a href="proyectos.html">Retos y proyectos</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© <span data-year>2026</span> Universidad Surcolombiana · Facultad de Ingeniería</p>
+      <p>Sitio web elaborado por Sofía Claros - María Magdalena</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

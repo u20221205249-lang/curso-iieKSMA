@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Introducción a la Ingeniería Electrónica (IIE) | Universidad Surcolombiana</title>
+  <meta name="description" content="Sitio del curso Introducción a la Ingeniería Electrónica (BEINEL54) del programa de Ingeniería Electrónica de la Universidad Surcolombiana. Metodología CDIO, unidades de LEGO, Arduino y PCB.">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Universidad Surcolombiana — Facultad de Ingeniería">
+        <span class="brand-text">
+          <span class="brand-course">Introducción a la Ingeniería Electrónica</span>
+          <span class="brand-sub">Ingeniería Electrónica · BEINEL54</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Menú principal">
+        <ul class="nav-list">
+          <li class="has-submenu">
+            <a class="nav-link" href="index.html">Inicio <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="index.html#presentacion">Presentación<span class="submenu-desc">De qué trata el curso</span></a></li>
+              <li><a href="index.html#ruta">Ruta del estudiante<span class="submenu-desc">LEGO · Arduino · PCB · Proyecto</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="curso.html">Curso <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="curso.html#informacion">Información<span class="submenu-desc">Código, créditos, horas</span></a></li>
+              <li><a href="curso.html#competencias">Competencias<span class="submenu-desc">Alineadas con ABET</span></a></li>
+              <li><a href="curso.html#resultados">Resultados de aprendizaje<span class="submenu-desc">RA1, RA2 y RA3</span></a></li>
+              <li><a href="curso.html#evaluacion">Evaluación<span class="submenu-desc">Niveles de desempeño</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="cdio.html">CDIO <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="cdio.html#concebir">Concebir<span class="submenu-desc">Entender el reto</span></a></li>
+              <li><a href="cdio.html#disenar">Diseñar<span class="submenu-desc">Planear la solución</span></a></li>
+              <li><a href="cdio.html#implementar">Implementar<span class="submenu-desc">Construir el prototipo</span></a></li>
+              <li><a href="cdio.html#operar">Operar<span class="submenu-desc">Probar y competir</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="unidades.html">Unidades <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="unidades.html#unidad-1">1. LEGO<span class="submenu-desc">Fundamentos y lógica</span></a></li>
+              <li><a href="unidades.html#unidad-2">2. Arduino<span class="submenu-desc">Sistemas embebidos</span></a></li>
+              <li><a href="unidades.html#unidad-3">3. PCB<span class="submenu-desc">Diseño y manufactura</span></a></li>
+              <li><a href="unidades.html#unidad-4">4. Proyecto Integrador<span class="submenu-desc">Integración final</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="recursos.html">Recursos <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="recursos.html#talleres">Talleres<span class="submenu-desc">Guías descargables</span></a></li>
+              <li><a href="recursos.html#arduino">Arduino<span class="submenu-desc">Referencia rápida</span></a></li>
+              <li><a href="recursos.html#tutoriales-arduino">Tutoriales Arduino<span class="submenu-desc">20 lecciones complementarias</span></a></li>
+              <li><a href="recursos.html#lego">Inventario LEGO<span class="submenu-desc">Kit EV3 y costos</span></a></li>
+              <li><a href="recursos.html#simulacion">Simulación<span class="submenu-desc">Tinkercad y Open Roberta</span></a></li>
+              <li><a href="recursos.html#pcb">PCB<span class="submenu-desc">Herramientas EDA</span></a></li>
+              <li><a href="galeria.html">Galería<span class="submenu-desc">Fotos del curso</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="proyectos.html">Proyectos <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="proyectos.html#retos">Retos<span class="submenu-desc">Seguidor de línea velocista</span></a></li>
+              <li><a href="proyectos.html#integrador">Proyecto Integrador<span class="submenu-desc">Ventilación automatizada</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <span class="hero-kicker">Programa de Ingeniería Electrónica · Primer semestre</span>
+            <h1>Curso Introducción a la Ingeniería Electrónica (IIE)</h1>
+            <p class="lead">El eje fundacional del plan de estudios. Aquí no se estudia la ingeniería desde afuera: se recorre el ciclo completo de un producto electrónico, desde la idea hasta el prototipo que funciona, bajo el marco CDIO.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="unidades.html">Ver las unidades</a>
+              <a class="btn btn-ghost" href="cdio.html">Conocer el método CDIO</a>
+            </div>
+          </div>
+
+          <figure class="hero-figure">
+            <img src="assets/img/facultad.jpg" width="1400" height="1018"
+                 alt="Entrada de la Facultad de Ingeniería de la Universidad Surcolombiana">
+            <figcaption>Facultad de Ingeniería · Universidad Surcolombiana, Neiva</figcaption>
+          </figure>
+        </div>
+
+        <div class="facts-strip">
+          <div class="fact">
+            <span class="fact-num">2</span>
+            <span class="fact-label">Créditos académicos</span>
+          </div>
+          <div class="fact">
+            <span class="fact-num">32 h</span>
+            <span class="fact-label">Acompañamiento directo</span>
+          </div>
+          <div class="fact">
+            <span class="fact-num">64 h</span>
+            <span class="fact-label">Trabajo independiente</span>
+          </div>
+          <div class="fact">
+            <span class="fact-num">4</span>
+            <span class="fact-label">Unidades temáticas</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRESENTACIÓN ===================== -->
+    <section id="presentacion" class="alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Presentación</span>
+          <h2>Aprender ingeniería construyendo ingeniería</h2>
+        </div>
+
+        <div class="grid grid-2">
+          <div>
+            <p>La asignatura se articula bajo los lineamientos del Estándar 4 de la iniciativa CDIO: <strong>Concebir, Diseñar, Implementar y Operar</strong>. Su estructura pedagógica se aleja de la instrucción pasiva para adoptar un enfoque de aprendizaje basado en proyectos, donde el estudiante experimenta el ciclo de vida completo de un producto electrónico desde su etapa inicial.</p>
+            <p>El desarrollo temático integra progresivamente tres niveles de complejidad tecnológica. Primero se emplean plataformas de robótica modular para asentar las bases del pensamiento lógico, la mecánica y la algoritmia sin la barrera de entrada de la electrónica compleja. Luego llega la transición a sistemas embebidos, con interacción directa con sensores y actuadores a nivel de componente. El curso culmina con el diseño y manufactura de Circuitos Impresos.</p>
+          </div>
+
+          <div>
+            <div class="card">
+              <h3>Por qué importa en la región</h3>
+              <p class="small">El Huila atraviesa un proceso de transformación productiva con focos estratégicos en tecnificación agroindustrial, piscicultura de precisión y transición energética. Ese contexto demanda ingenieros con capacidad operativa para intervenir sistemas reales desde etapas tempranas.</p>
+              <p class="small mb-0">Al enfrentar al estudiante a proyectos de diseño e implementación desde el primer semestre, el curso valida su perfil profesional y reduce la deserción temprana por falta de vinculación vocacional.</p>
+              <div style="margin-top:14px">
+                <span class="tag tag-garnet">Estándar 4 CDIO</span>
+                <span class="tag tag-ivy">Aprendizaje por proyectos</span>
+                <span class="tag tag-azure">Contexto surcolombiano</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RUTA DEL ESTUDIANTE ===================== -->
+    <section id="ruta">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Ruta del estudiante</span>
+          <h2>De la lógica con bloques a la placa fabricada</h2>
+          <p>Cada etapa se apoya en la anterior. Se empieza programando comportamiento sin cablear nada y se termina soldando componentes sobre una PCB propia.</p>
+        </div>
+
+        <div class="route">
+          <article class="route-step">
+            <div class="route-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="18" width="32" height="20" rx="2"/><path d="M14 18v-4a2 2 0 012-2h4a2 2 0 012 2v4M26 18v-4a2 2 0 012-2h4a2 2 0 012 2v4"/><circle cx="18" cy="28" r="1.6" fill="currentColor" stroke="none"/><circle cx="30" cy="28" r="1.6" fill="currentColor" stroke="none"/></svg></div>
+            <h3>LEGO</h3>
+            <p>Pensamiento lógico, algoritmia y control de sensores y actuadores con robótica modular.</p>
+            <a href="unidades.html#unidad-1">Unidad 1</a>
+          </article>
+
+          <article class="route-step">
+            <div class="route-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="12" y="12" width="24" height="24" rx="3"/><rect x="19" y="19" width="10" height="10" rx="1"/><path d="M18 12V7M24 12V7M30 12V7M18 36v5M24 36v5M30 36v5M12 18H7M12 24H7M12 30H7M36 18h5M36 24h5M36 30h5"/></svg></div>
+            <h3>Arduino</h3>
+            <p>Microcontroladores, entradas y salidas, señales analógicas y digitales, sintaxis C++.</p>
+            <a href="unidades.html#unidad-2">Unidad 2</a>
+          </article>
+
+          <article class="route-step">
+            <div class="route-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="34" height="34" rx="3"/><circle cx="16" cy="16" r="2.4"/><circle cx="32" cy="32" r="2.4"/><circle cx="32" cy="16" r="2.4"/><path d="M16 18.4V28l6 6h8M32 18.4V26M18.4 16H26"/></svg></div>
+            <h3>PCB</h3>
+            <p>Captura esquemática, huellas, ruteo, archivos de manufactura y técnicas de soldadura.</p>
+            <a href="unidades.html#unidad-3">Unidad 3</a>
+          </article>
+
+          <article class="route-step">
+            <div class="route-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h20v10a10 10 0 01-20 0V8z"/><path d="M14 11H9v3a5 5 0 005 5M34 11h5v3a5 5 0 01-5 5"/><path d="M24 28v7M18 40h12l-1.5-5h-9L18 40z"/></svg></div>
+            <h3>Proyecto</h3>
+            <p>Integración de los subsistemas mecánico, electrónico y de control en una sola solución.</p>
+            <a href="unidades.html#unidad-4">Unidad 4</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CDIO ===================== -->
+    <section class="alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Metodología</span>
+          <h2>Las cuatro fases del ciclo CDIO</h2>
+          <p>El mismo ciclo se repite en los retos de robótica y en el proyecto integrador. Cada fase tiene entregables propios y una revisión antes de avanzar.</p>
+        </div>
+
+        <div class="cdio-row">
+          <a class="cdio-chip c" href="cdio.html#concebir" style="text-decoration:none">
+            <span class="cdio-letter">C</span>
+            <h4>Concebir</h4>
+            <p>Comprender el reto, analizar restricciones y organizar el equipo.</p>
+          </a>
+          <a class="cdio-chip d" href="cdio.html#disenar" style="text-decoration:none">
+            <span class="cdio-letter">D</span>
+            <h4>Diseñar</h4>
+            <p>Planear la solución: modelo digital, lista de piezas y costos.</p>
+          </a>
+          <a class="cdio-chip i" href="cdio.html#implementar" style="text-decoration:none">
+            <span class="cdio-letter">I</span>
+            <h4>Implementar</h4>
+            <p>Construir el prototipo físico y ajustarlo hasta que funcione.</p>
+          </a>
+          <a class="cdio-chip o" href="cdio.html#operar" style="text-decoration:none">
+            <span class="cdio-letter">O</span>
+            <h4>Operar</h4>
+            <p>Calibrar, probar en pista y validar el desempeño real.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALERÍA (vista previa) ===================== -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">El curso en imágenes</span>
+          <h2>Pista, código y prototipos</h2>
+          <p>Registro de las sesiones de robótica y de los montajes con Arduino desarrollados durante el semestre.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <a href="assets/img/galeria4.jpg" data-lightbox data-caption="Competencia de robots seguidores de línea en la Facultad de Ingeniería">
+            <img src="assets/img/galeria4.jpg" alt="Estudiantes reunidos alrededor de la pista durante la competencia" loading="lazy">
+          </a>
+          <a href="assets/img/galeria2.jpg" data-lightbox data-caption="Robot LEGO Mindstorms EV3 con sensor ultrasónico y sensor de color">
+            <img src="assets/img/galeria2.jpg" alt="Robot construido con piezas LEGO Mindstorms EV3" loading="lazy">
+          </a>
+          <a href="assets/img/galeria3.jpg" data-lightbox data-caption="Montaje en protoboard con Arduino Uno, LEDs y sensor DHT11">
+            <img src="assets/img/galeria3.jpg" alt="Circuito armado en protoboard con una placa Arduino Uno" loading="lazy">
+          </a>
+          <a href="assets/img/galeria6.jpg" data-lightbox data-caption="Robot recorriendo el circuito de línea negra">
+            <img src="assets/img/galeria6.jpg" alt="Robot EV3 siguiendo la línea negra sobre la pista" loading="lazy">
+          </a>
+        </div>
+
+        <p style="margin-top:22px"><a class="btn btn-ghost" href="galeria.html">Ver la galería completa</a></p>
+      </div>
+    </section>
+
+    <!-- ===================== CIERRE ===================== -->
+    <section class="alt">
+      <div class="container">
+        <div class="card" style="display:flex;gap:28px;align-items:center;flex-wrap:wrap;justify-content:space-between">
+          <div style="flex:1;min-width:280px">
+            <h3 style="margin-bottom:.3em">Todo el material del semestre, en un solo lugar</h3>
+            <p class="mb-0 small">Guías de taller, inventario del kit EV3, herramientas de simulación y las guías de los dos proyectos del curso.</p>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a class="btn btn-primary" href="recursos.html">Ir a recursos</a>
+            <a class="btn btn-ghost" href="proyectos.html">Ver proyectos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox de la galería -->
+    <div class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+      <button class="lightbox-close" type="button" aria-label="Cerrar">&times;</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Imagen anterior">&#8249;</button>
+      <img src="" alt="">
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Imagen siguiente">&#8250;</button>
+      <p class="lightbox-caption"></p>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <img src="assets/img/logo.png" alt="">
+              <span class="footer-brand-text">Universidad Surcolombiana<br>Facultad de Ingeniería</span>
+            </div>
+            <p>Curso Introducción a la Ingeniería Electrónica (IIE), código BEINEL54. Programa de Ingeniería Electrónica, primer semestre. Curso estructurado bajo el Estándar 4 de la iniciativa CDIO.</p>
+            <p class="small">Docente: Diego Sendoya · Neiva, Huila, Colombia</p>
+          </div>
+
+          <div>
+            <h4>Navegación</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="curso.html">Sobre el curso</a></li>
+              <li><a href="cdio.html">Metodología CDIO</a></li>
+              <li><a href="unidades.html">Unidades temáticas</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Material</h4>
+            <ul class="footer-links">
+              <li><a href="recursos.html#talleres">Talleres de Arduino</a></li>
+              <li><a href="recursos.html#lego">Inventario LEGO EV3</a></li>
+              <li><a href="proyectos.html">Retos y proyectos</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© <span data-year>2026</span> Universidad Surcolombiana · Facultad de Ingeniería</p>
+      <p>Sitio web elaborado por Sofía Claros - María Magdalena</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

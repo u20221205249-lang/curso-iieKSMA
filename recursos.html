@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recursos | Introducción a la Ingeniería Electrónica (IIE)</title>
+  <meta name="description" content="Guías de taller descargables, referencia de Arduino, inventario del kit LEGO EV3, herramientas de simulación y material de PCB.">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Universidad Surcolombiana — Facultad de Ingeniería">
+        <span class="brand-text">
+          <span class="brand-course">Introducción a la Ingeniería Electrónica</span>
+          <span class="brand-sub">Ingeniería Electrónica · BEINEL54</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Menú principal">
+        <ul class="nav-list">
+          <li class="has-submenu">
+            <a class="nav-link" href="index.html">Inicio <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="index.html#presentacion">Presentación<span class="submenu-desc">De qué trata el curso</span></a></li>
+              <li><a href="index.html#ruta">Ruta del estudiante<span class="submenu-desc">LEGO · Arduino · PCB · Proyecto</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="curso.html">Curso <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="curso.html#informacion">Información<span class="submenu-desc">Código, créditos, horas</span></a></li>
+              <li><a href="curso.html#competencias">Competencias<span class="submenu-desc">Alineadas con ABET</span></a></li>
+              <li><a href="curso.html#resultados">Resultados de aprendizaje<span class="submenu-desc">RA1, RA2 y RA3</span></a></li>
+              <li><a href="curso.html#evaluacion">Evaluación<span class="submenu-desc">Niveles de desempeño</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="cdio.html">CDIO <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="cdio.html#concebir">Concebir<span class="submenu-desc">Entender el reto</span></a></li>
+              <li><a href="cdio.html#disenar">Diseñar<span class="submenu-desc">Planear la solución</span></a></li>
+              <li><a href="cdio.html#implementar">Implementar<span class="submenu-desc">Construir el prototipo</span></a></li>
+              <li><a href="cdio.html#operar">Operar<span class="submenu-desc">Probar y competir</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="unidades.html">Unidades <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="unidades.html#unidad-1">1. LEGO<span class="submenu-desc">Fundamentos y lógica</span></a></li>
+              <li><a href="unidades.html#unidad-2">2. Arduino<span class="submenu-desc">Sistemas embebidos</span></a></li>
+              <li><a href="unidades.html#unidad-3">3. PCB<span class="submenu-desc">Diseño y manufactura</span></a></li>
+              <li><a href="unidades.html#unidad-4">4. Proyecto Integrador<span class="submenu-desc">Integración final</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="recursos.html">Recursos <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="recursos.html#talleres">Talleres<span class="submenu-desc">Guías descargables</span></a></li>
+              <li><a href="recursos.html#arduino">Arduino<span class="submenu-desc">Referencia rápida</span></a></li>
+              <li><a href="recursos.html#tutoriales-arduino">Tutoriales Arduino<span class="submenu-desc">20 lecciones complementarias</span></a></li>
+              <li><a href="recursos.html#lego">Inventario LEGO<span class="submenu-desc">Kit EV3 y costos</span></a></li>
+              <li><a href="recursos.html#simulacion">Simulación<span class="submenu-desc">Tinkercad y Open Roberta</span></a></li>
+              <li><a href="recursos.html#pcb">PCB<span class="submenu-desc">Herramientas EDA</span></a></li>
+              <li><a href="galeria.html">Galería<span class="submenu-desc">Fotos del curso</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="proyectos.html">Proyectos <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="proyectos.html#retos">Retos<span class="submenu-desc">Seguidor de línea velocista</span></a></li>
+              <li><a href="proyectos.html#integrador">Proyecto Integrador<span class="submenu-desc">Ventilación automatizada</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Inicio</a> · Recursos</p>
+        <span class="eyebrow">Material de apoyo</span>
+        <h1>Recursos del curso</h1>
+        <p class="lead">Guías de taller descargables, referencia de Arduino, inventario del kit EV3 y herramientas de simulación.</p>
+      </div>
+    </section>
+
+    <!-- ===================== TALLERES ===================== -->
+    <section id="talleres">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Talleres</span>
+          <h2>Guías de práctica</h2>
+          <p>Cada taller se sustenta en clase ante las monitoras, según el cronograma que defina el docente. Sin sustentación, la calificación es cero.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="resource-card">
+            <div class="resource-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
+            <div>
+              <h3 style="font-size:1.08rem">Taller 1 · Digitalización de señales analógicas</h3>
+              <p class="small">Lectura del voltaje de un potenciómetro y visualización en el monitor serial, con mensaje de nivel óptimo por debajo de 3,5 V y alerta de sobretensión a partir de ese valor. Entregables: simulación en Tinkercad y prototipo en protoboard.</p>
+              <p class="resource-meta">Se sustenta en clase ante las monitoras · DOCX</p>
+              <a class="btn btn-ghost btn-sm" href="assets/docs/taller-1-senales-analogicas.docx" download>Descargar guía</a>
+            </div>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
+            <div>
+              <h3 style="font-size:1.08rem">Taller 2 · Escritura analógica (PWM)</h3>
+              <p class="small">Control del brillo de un LED con <code>analogWrite()</code>. Incluye el reto corto de generar un efecto de respiración con un ciclo <code>for()</code> y la réplica del circuito en protoboard.</p>
+              <p class="resource-meta">Se sustenta en clase ante las monitoras · DOCX</p>
+              <a class="btn btn-ghost btn-sm" href="assets/docs/taller-2-escritura-analogica-pwm.docx" download>Descargar guía</a>
+            </div>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
+            <div>
+              <h3 style="font-size:1.08rem">Taller final · Asistente de parqueo inteligente</h3>
+              <p class="small">Sistema con sensor ultrasónico HC-SR04, dos pulsadores con resistencia pull-down, cuatro LEDs y buzzer pasivo. Implementa modo de marcha y modo silencioso, y varía el tono de la alerta según la cercanía.</p>
+              <p class="resource-meta">Se sustenta en clase ante las monitoras · DOCX</p>
+              <a class="btn btn-ghost btn-sm" href="assets/docs/taller-final-asistente-parqueo.docx" download>Descargar guía</a>
+            </div>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
+            <div>
+              <h3 style="font-size:1.08rem">Guía de instalación · EV3 Classroom</h3>
+              <p class="small">Instalación del software de programación del brick LEGO Mindstorms EV3, paso previo a los retos de la unidad 1.</p>
+              <p class="resource-meta">DOCX</p>
+              <a class="btn btn-ghost btn-sm" href="assets/docs/guia-instalacion-ev3-classroom.docx" download>Descargar guía</a>
+            </div>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
+            <div>
+              <h3 style="font-size:1.08rem">Guía de práctica 2 · CDIO</h3>
+              <p class="small">Práctica de apoyo para la fase de diseño, incluida la exportación del programa en bloques desde el software de programación.</p>
+              <p class="resource-meta">DOCX</p>
+              <a class="btn btn-ghost btn-sm" href="assets/docs/guia-practica-2-cdio.docx" download>Descargar guía</a>
+            </div>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
+            <div>
+              <h3 style="font-size:1.08rem">Guía práctica · Etapa de diseño</h3>
+              <p class="small">Pautas de los cinco entregables de la etapa D: archivo de construcción, render, lista de piezas, tabla de costos y programa en bloques, con su convención de nombres.</p>
+              <p class="resource-meta">DOCX</p>
+              <a class="btn btn-ghost btn-sm" href="assets/docs/guia-practica-etapa-diseno.docx" download>Descargar guía</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ARDUINO ===================== -->
+    <section id="arduino" class="alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Arduino</span>
+          <h2>Referencia rápida</h2>
+          <p>Los conceptos y funciones que se usan de forma recurrente en los talleres de la unidad 2.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>El ADC del Arduino Uno</h3>
+            <p class="small">Un ADC convierte señales analógicas en valores digitales discretos. El del Arduino Uno tiene 10 bits de resolución, así que convierte voltajes de 0 V a 5 V en valores de 0 a 1023. Si el voltaje leído es 0 V, el valor entregado es 0; si es 5 V, el valor es 1023.</p>
+            <p class="small mb-0">El monitor serial es la consola que permite la comunicación bidireccional entre el sistema embebido y la computadora para visualizar datos en tiempo real.</p>
+          </div>
+
+          <div class="card">
+            <h3>PWM: modulación por ancho de pulso</h3>
+            <p class="small"><code>analogWrite()</code> no genera un voltaje analógico real. Arduino produce una señal digital que se enciende y apaga muy rápido, variando el tiempo que permanece encendida, lo que permite simular un voltaje analógico.</p>
+            <p class="small mb-0">En Arduino el PWM admite valores entre 0 y 255.</p>
+          </div>
+        </div>
+
+        <h3 style="margin-top:34px">Funciones frecuentes</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Función</th><th scope="col">Qué hace</th></tr></thead>
+            <tbody>
+              <tr><td><code>pinMode(pin, modo)</code></td><td>Configura el pin como entrada (INPUT) o salida (OUTPUT).</td></tr>
+              <tr><td><code>analogWrite(pin, valor)</code></td><td>Escribe un valor PWM entre 0 y 255 para simular salidas analógicas.</td></tr>
+              <tr><td><code>Serial.begin()</code></td><td>Inicia la comunicación serial, habitualmente a 9600 baudios.</td></tr>
+              <tr><td><code>delay(ms)</code></td><td>Pausa el programa durante la cantidad de milisegundos indicada.</td></tr>
+              <tr><td><code>map()</code></td><td>Reasigna un rango de valores a otro, por ejemplo distancia a frecuencia de sonido.</td></tr>
+              <tr><td><code>constrain()</code></td><td>Encierra un valor entre un mínimo y un máximo para evitar resultados fuera de rango.</td></tr>
+              <tr><td><code>tone()</code></td><td>Genera una onda cuadrada de frecuencia específica en un pin, útil para un buzzer pasivo.</td></tr>
+              <tr><td><code>pulseIn()</code></td><td>Mide la duración de un pulso, necesaria para calcular distancia con el sensor ultrasónico.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:30px">
+          <div class="card">
+            <h3>Sensor ultrasónico HC-SR04</h3>
+            <p class="small">El sensor no mide por sí solo: espera una orden. Para despertarlo se envía por el pin Trigger un pulso en estado alto de exactamente 10 microsegundos. El sensor lanza entonces una ráfaga de sonido inaudible que choca con el objeto y regresa por el pin Echo.</p>
+            <p class="small mb-0">Como la velocidad del sonido en el aire es de unos 343 m/s (0,034 cm/µs), la distancia se calcula con el tiempo medido, dividido entre dos porque el sonido viaja de ida y vuelta.</p>
+          </div>
+
+          <div class="card">
+            <h3>Rango audible y pull-down</h3>
+            <p class="small">El oído humano promedio percibe entre 20 Hz y 20 000 Hz. Por debajo de 50 Hz se escuchan clics en lugar de notas, y por encima de 15 000 Hz el buzzer puede no responder. Para los talleres se recomienda trabajar entre 200 Hz y 2 500 Hz.</p>
+            <p class="small mb-0">Un pin digital de entrada no puede quedar al aire: una resistencia pull-down de 10 kΩ conectada a tierra asegura que el pin lea LOW cuando el botón no está presionado y HIGH solo al presionarlo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TUTORIALES COMPLEMENTARIOS ===================== -->
+    <section id="tutoriales-arduino">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Material complementario</span>
+          <h2>20 tutoriales para profundizar en Arduino</h2>
+          <p>Estas guías no son obligatorias para aprobar el curso. Son una colección de referencia para quien quiera ir más allá de los talleres de clase y familiarizarse con más componentes electrónicos por su cuenta.</p>
+        </div>
+
+        <div class="callout" style="margin-bottom:28px">
+          <p>Cada lección incluye introducción teórica, hardware requerido, explicación del código y diagrama de conexión, con el mismo formato de los talleres del curso.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th scope="col">N.º</th><th scope="col">Tutorial</th><th scope="col">De qué trata</th><th scope="col"></th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>LED parpadeante</td><td class="small">Encender y apagar un LED a intervalos, la primera toma de contacto con Arduino.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-01-led-parpadeante.pdf" download>PDF</a></td></tr>
+              <tr><td>2</td><td>RGB LED</td><td class="small">Mezclar rojo, verde y azul con PWM para generar distintos colores.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-02-rgb-led.pdf" download>PDF</a></td></tr>
+              <tr><td>3</td><td>Control de un LED por el botón</td><td class="small">Encender y apagar un LED con dos pulsadores usando entradas digitales.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-03-led-por-boton.pdf" download>PDF</a></td></tr>
+              <tr><td>4</td><td>Zumbador activo</td><td class="small">Generar un sonido simple aplicando voltaje directo a un zumbador con oscilador interno.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-04-zumbador-activo.pdf" download>PDF</a></td></tr>
+              <tr><td>5</td><td>Zumbador pasivo</td><td class="small">Generar ocho notas musicales distintas controlando la frecuencia con <code>tone()</code>.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-05-zumbador-pasivo.pdf" download>PDF</a></td></tr>
+              <tr><td>6</td><td>Ocho LED con 74HC595</td><td class="small">Controlar ocho LEDs usando un registro de desplazamiento y solo tres pines de Arduino.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-06-ocho-led-74hc595.pdf" download>PDF</a></td></tr>
+              <tr><td>7</td><td>Fotoresistor</td><td class="small">Medir la intensidad de la luz con una entrada analógica y una resistencia dependiente de la luz (LDR).</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-07-fotoresistor.pdf" download>PDF</a></td></tr>
+              <tr><td>8</td><td>74HC595 y visualización de segmentos</td><td class="small">Mostrar números del 0 al 13 en una pantalla de siete segmentos mediante un registro de desplazamiento.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-08-74hc595-segmentos.pdf" download>PDF</a></td></tr>
+              <tr><td>9</td><td>Pantalla de cuatro dígitos de 7 segmentos</td><td class="small">Mostrar varios dígitos simultáneos en una pantalla de cuatro caracteres.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-09-display-4-digitos.pdf" download>PDF</a></td></tr>
+              <tr><td>10</td><td>Sensor de inclinación</td><td class="small">Detectar pequeños ángulos de inclinación con un interruptor de bola.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-10-sensor-inclinacion.pdf" download>PDF</a></td></tr>
+              <tr><td>11</td><td>Módulo de sensor ultrasónico HC-SR04</td><td class="small">Medir distancias calculando el tiempo de vuelo de un pulso de ultrasonido.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-11-sensor-ultrasonico.pdf" download>PDF</a></td></tr>
+              <tr><td>12</td><td>Módulo de joystick analógico</td><td class="small">Leer los ejes X, Y y el botón de un joystick para añadir control a un proyecto.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-12-joystick-analogico.pdf" download>PDF</a></td></tr>
+              <tr><td>13</td><td>Módulo de interruptor de membrana</td><td class="small">Leer un teclado de membrana como entrada para un proyecto.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-13-interruptor-membrana.pdf" download>PDF</a></td></tr>
+              <tr><td>14</td><td>DHT11: sensor de temperatura y humedad</td><td class="small">Leer temperatura y humedad ambiente con el sensor DHT11.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-14-dht11-temp-humedad.pdf" download>PDF</a></td></tr>
+              <tr><td>15</td><td>Módulo receptor IR</td><td class="small">Recibir y decodificar señales de un control remoto infrarrojo.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-15-receptor-ir.pdf" download>PDF</a></td></tr>
+              <tr><td>16</td><td>Motor de pasos con mando a distancia</td><td class="small">Controlar un motor paso a paso a partir de las señales de un control remoto IR.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-16-motor-pasos-mando-ir.pdf" download>PDF</a></td></tr>
+              <tr><td>17</td><td>Servo</td><td class="small">Mover un servomotor entre 0° y 180° enviando pulsos eléctricos.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-17-servo.pdf" download>PDF</a></td></tr>
+              <tr><td>18</td><td>Pantalla LCD</td><td class="small">Mostrar texto en una pantalla LCD 1602 con la librería <code>LiquidCrystal</code>.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-18-pantalla-lcd.pdf" download>PDF</a></td></tr>
+              <tr><td>19</td><td>Termómetro</td><td class="small">Calcular la temperatura con un termistor y mostrarla en una pantalla LCD.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-19-termometro.pdf" download>PDF</a></td></tr>
+              <tr><td>20</td><td>Control de motor DC</td><td class="small">Controlar la velocidad y el sentido de giro de un motor de corriente directa.</td><td><a class="btn btn-ghost btn-sm" href="assets/docs/tutoriales-arduino/leccion-20-control-motor-dc.pdf" download>PDF</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INVENTARIO LEGO ===================== -->
+    <section id="lego">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Inventario LEGO</span>
+          <h2>Kit EV3 y modelo de costos</h2>
+          <p>No existe un presupuesto inicial: cada equipo calcula el costo total final de su robot según la tabla de precios del curso.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Piezas de la zona roja</h3>
+            <p class="small">Todas las piezas ubicadas en la zona roja del kit tienen el mismo valor de <strong>$1.000 por pieza</strong>, sin importar tamaño o forma. Incluye:</p>
+            <ul class="small mb-0">
+              <li>Vigas (beams) y marcos</li>
+              <li>Piezas en L</li>
+              <li>Pines, ejes y bushings</li>
+              <li>Engranajes y poleas</li>
+              <li>Conectores y soportes</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Piezas especiales</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th scope="col">Componente</th><th scope="col">Precio</th></tr></thead>
+                <tbody>
+                  <tr><td>Rueda (cualquier tamaño)</td><td>$5.000</td></tr>
+                  <tr><td>Brick EV3</td><td>$20.000</td></tr>
+                  <tr><td>Batería EV3</td><td>$5.000</td></tr>
+                  <tr><td>Motor grande</td><td>$10.000</td></tr>
+                  <tr><td>Motor mediano</td><td>$8.000</td></tr>
+                  <tr><td>Sensor de color</td><td>$6.000</td></tr>
+                  <tr><td>Sensor adicional</td><td>$5.000</td></tr>
+                  <tr><td>Cable EV3</td><td>$2.000</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout" style="margin-top:26px">
+          <p>Al finalizar el proyecto se evalúa la optimización de recursos bajo un criterio de relación calidad–precio: el robot que logre el mejor desempeño con un costo razonable obtiene la mayor calificación en ese criterio.</p>
+        </div>
+
+        <div class="callout" style="margin-top:16px">
+          <p>El inventario detallado de piezas por kit ya está disponible.</p>
+          <p class="mb-0"><a class="btn btn-ivy btn-sm" href="file:///C:/Users/sr499/Downloads/inventario_mindstormsV31-07.html" target="_blank" rel="noopener noreferrer">Ver inventario completo del kit EV3</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SIMULACIÓN ===================== -->
+    <section id="simulacion" class="alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Simulación</span>
+          <h2>Herramientas virtuales</h2>
+          <p>Todo circuito se valida en simulación antes del montaje físico. Es la regla del curso y ahorra componentes quemados.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <span class="tag tag-azure">Arduino</span>
+            <h3>Tinkercad</h3>
+            <p class="small">Plataforma en línea para armar y simular circuitos con Arduino Uno, protoboard, LEDs, sensores y monitor serial. Es el entregable de simulación de los tres talleres.</p>
+            <a class="btn btn-ghost btn-sm" href="https://www.tinkercad.com/circuits" target="_blank" rel="noopener noreferrer">Abrir Tinkercad</a>
+          </article>
+
+          <article class="card">
+            <span class="tag tag-ivy">LEGO</span>
+            <h3>Bricklink Studio 2.0</h3>
+            <p class="small">Herramienta obligatoria para el diseño mecánico y estructural del robot, la generación del render y la lista de piezas de la etapa de diseño.</p>
+            <a class="btn btn-ghost btn-sm" href="https://www.bricklink.com/v3/studio/download.page" target="_blank" rel="noopener noreferrer">Descargar Studio</a>
+          </article>
+
+          <article class="card">
+            <span class="tag tag-ivy">LEGO</span>
+            <h3>Open Roberta Lab</h3>
+            <p class="small">Entorno de programación por bloques para el brick EV3. El programa se exporta en XML como entregable de la etapa de diseño.</p>
+            <a class="btn btn-ghost btn-sm" href="https://lab.open-roberta.org/" target="_blank" rel="noopener noreferrer">Abrir Open Roberta</a>
+          </article>
+        </div>
+
+        <div class="grid grid-2" style="margin-top:22px">
+          <article class="card">
+            <span class="tag tag-azure">Arduino</span>
+            <h3>Arduino IDE</h3>
+            <p class="small mb-0">Entorno oficial para compilar y cargar el programa en la placa física. Se usa en el paso de implementación de cada taller, después de validar en Tinkercad.</p>
+          </article>
+
+          <article class="card">
+            <span class="tag tag-ivy">LEGO</span>
+            <h3>EV3 Classroom</h3>
+            <p class="small mb-0">Software de programación del brick EV3 usado en clase. La guía de instalación está disponible en la sección de talleres.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PCB ===================== -->
+    <section id="pcb">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">PCB</span>
+          <h2>Diseño y manufactura electrónica</h2>
+          <p>Material de la unidad 3, centrado en el software EDA y en las normas de ruteo y soldadura.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Qué se trabaja</h3>
+            <ul class="small mb-0">
+              <li>Captura esquemática y selección de huellas.</li>
+              <li>Normas de ruteo, ancho de pistas y planos de tierra.</li>
+              <li>Generación de archivos Gerber para manufactura.</li>
+              <li>Revisión de pares mediante <em>Design Rule Check</em>.</li>
+              <li>Técnicas de soldadura y ensamble.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Cómo se evalúa</h3>
+            <ul class="small mb-0">
+              <li>Revisión técnica de los archivos de fabricación antes de manufacturar.</li>
+              <li>Lista de chequeo de calidad del ensamble: soldadura, continuidad y estética.</li>
+              <li>Prueba de funcionamiento eléctrico de la placa fabricada.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="callout soon" style="margin-top:26px">
+          <p>Las guías de la unidad de PCB se publicarán en esta sección durante el semestre.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <img src="assets/img/logo.png" alt="">
+              <span class="footer-brand-text">Universidad Surcolombiana<br>Facultad de Ingeniería</span>
+            </div>
+            <p>Curso Introducción a la Ingeniería Electrónica (IIE), código BEINEL54. Programa de Ingeniería Electrónica, primer semestre. Curso estructurado bajo el Estándar 4 de la iniciativa CDIO.</p>
+            <p class="small">Docente: Diego Sendoya · Neiva, Huila, Colombia</p>
+          </div>
+
+          <div>
+            <h4>Navegación</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="curso.html">Sobre el curso</a></li>
+              <li><a href="cdio.html">Metodología CDIO</a></li>
+              <li><a href="unidades.html">Unidades temáticas</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Material</h4>
+            <ul class="footer-links">
+              <li><a href="recursos.html#talleres">Talleres de Arduino</a></li>
+              <li><a href="recursos.html#lego">Inventario LEGO EV3</a></li>
+              <li><a href="proyectos.html">Retos y proyectos</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© <span data-year>2026</span> Universidad Surcolombiana · Facultad de Ingeniería</p>
+      <p>Sitio web elaborado por Sofía Claros - María Magdalena</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

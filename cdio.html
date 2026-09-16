@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metodología CDIO | Introducción a la Ingeniería Electrónica (IIE)</title>
+  <meta name="description" content="Las cuatro etapas del ciclo CDIO aplicadas en el curso: concebir, diseñar, implementar y operar, con entregables y cronograma.">
+  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="header-bar">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Universidad Surcolombiana — Facultad de Ingeniería">
+        <span class="brand-text">
+          <span class="brand-course">Introducción a la Ingeniería Electrónica</span>
+          <span class="brand-sub">Ingeniería Electrónica · BEINEL54</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Menú principal">
+        <ul class="nav-list">
+          <li class="has-submenu">
+            <a class="nav-link" href="index.html">Inicio <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="index.html#presentacion">Presentación<span class="submenu-desc">De qué trata el curso</span></a></li>
+              <li><a href="index.html#ruta">Ruta del estudiante<span class="submenu-desc">LEGO · Arduino · PCB · Proyecto</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="curso.html">Curso <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="curso.html#informacion">Información<span class="submenu-desc">Código, créditos, horas</span></a></li>
+              <li><a href="curso.html#competencias">Competencias<span class="submenu-desc">Alineadas con ABET</span></a></li>
+              <li><a href="curso.html#resultados">Resultados de aprendizaje<span class="submenu-desc">RA1, RA2 y RA3</span></a></li>
+              <li><a href="curso.html#evaluacion">Evaluación<span class="submenu-desc">Niveles de desempeño</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="cdio.html">CDIO <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="cdio.html#concebir">Concebir<span class="submenu-desc">Entender el reto</span></a></li>
+              <li><a href="cdio.html#disenar">Diseñar<span class="submenu-desc">Planear la solución</span></a></li>
+              <li><a href="cdio.html#implementar">Implementar<span class="submenu-desc">Construir el prototipo</span></a></li>
+              <li><a href="cdio.html#operar">Operar<span class="submenu-desc">Probar y competir</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="unidades.html">Unidades <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="unidades.html#unidad-1">1. LEGO<span class="submenu-desc">Fundamentos y lógica</span></a></li>
+              <li><a href="unidades.html#unidad-2">2. Arduino<span class="submenu-desc">Sistemas embebidos</span></a></li>
+              <li><a href="unidades.html#unidad-3">3. PCB<span class="submenu-desc">Diseño y manufactura</span></a></li>
+              <li><a href="unidades.html#unidad-4">4. Proyecto Integrador<span class="submenu-desc">Integración final</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="recursos.html">Recursos <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="recursos.html#talleres">Talleres<span class="submenu-desc">Guías descargables</span></a></li>
+              <li><a href="recursos.html#arduino">Arduino<span class="submenu-desc">Referencia rápida</span></a></li>
+              <li><a href="recursos.html#tutoriales-arduino">Tutoriales Arduino<span class="submenu-desc">20 lecciones complementarias</span></a></li>
+              <li><a href="recursos.html#lego">Inventario LEGO<span class="submenu-desc">Kit EV3 y costos</span></a></li>
+              <li><a href="recursos.html#simulacion">Simulación<span class="submenu-desc">Tinkercad y Open Roberta</span></a></li>
+              <li><a href="recursos.html#pcb">PCB<span class="submenu-desc">Herramientas EDA</span></a></li>
+              <li><a href="galeria.html">Galería<span class="submenu-desc">Fotos del curso</span></a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a class="nav-link" href="proyectos.html">Proyectos <svg class="nav-caret" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <ul class="submenu">
+              <li><a href="proyectos.html#retos">Retos<span class="submenu-desc">Seguidor de línea velocista</span></a></li>
+              <li><a href="proyectos.html#integrador">Proyecto Integrador<span class="submenu-desc">Ventilación automatizada</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Inicio</a> · CDIO</p>
+        <span class="eyebrow">Estándar 4 de la iniciativa CDIO</span>
+        <h1>Concebir, Diseñar, Implementar, Operar</h1>
+        <p class="lead">El ciclo de vida completo de un producto de ingeniería, aplicado desde el primer semestre.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Qué es CDIO</span>
+          <h2>Un marco para formar ingenieros que construyen</h2>
+        </div>
+        <p>CDIO es una iniciativa internacional de reforma de la educación en ingeniería. Su premisa es que el contexto natural del aprendizaje de un ingeniero es el ciclo de vida de un producto o sistema: concebirlo, diseñarlo, implementarlo y operarlo. En este curso ese ciclo no se explica en abstracto: se recorre dos veces, primero en el reto del robot seguidor de línea y luego en el proyecto integrador final.</p>
+
+        <div class="cdio-row" style="margin-top:34px">
+          <a class="cdio-chip c" href="#concebir" style="text-decoration:none">
+            <span class="cdio-letter">C</span><h4>Concebir</h4>
+            <p>Comprender el reto y organizar el equipo.</p>
+          </a>
+          <a class="cdio-chip d" href="#disenar" style="text-decoration:none">
+            <span class="cdio-letter">D</span><h4>Diseñar</h4>
+            <p>Planear técnicamente la solución.</p>
+          </a>
+          <a class="cdio-chip i" href="#implementar" style="text-decoration:none">
+            <span class="cdio-letter">I</span><h4>Implementar</h4>
+            <p>Construir el prototipo físico.</p>
+          </a>
+          <a class="cdio-chip o" href="#operar" style="text-decoration:none">
+            <span class="cdio-letter">O</span><h4>Operar</h4>
+            <p>Calibrar, probar y validar.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONCEBIR ===================== -->
+    <section id="concebir" class="alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Etapa C</span>
+          <h2>Concebir</h2>
+          <p>En esta etapa los estudiantes no inventan el problema: lo comprenden, lo analizan y organizan el trabajo del equipo bajo las restricciones dadas.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div>
+            <h3>Conceptos de arranque</h3>
+            <p class="small"><strong>¿Qué es un sistema?</strong> Un conjunto de partes que trabajan juntas para lograr un objetivo, bajo el esquema entrada → proceso → salida.</p>
+            <p class="small"><strong>¿Qué es un sensor?</strong> Un dispositivo que mide una variable física y la convierte en una señal eléctrica que el sistema puede entender.</p>
+            <p class="small"><strong>¿Qué es un actuador?</strong> Un dispositivo que convierte una señal eléctrica en una acción física.</p>
+            <p class="small"><strong>¿Qué es un seguidor de línea?</strong> Un sistema que detecta una línea en el suelo y ajusta su movimiento para seguirla automáticamente. Se usa en industria, logística y robótica educativa.</p>
+          </div>
+
+          <div class="card">
+            <h3>Objetivos de la etapa</h3>
+            <ul class="small">
+              <li>Comprender el reto del seguidor de línea tipo velocista.</li>
+              <li>Analizar las restricciones técnicas: dimensiones y piezas disponibles.</li>
+              <li>Definir una estrategia de diseño orientada a velocidad y eficiencia.</li>
+              <li>Asignar roles dentro del equipo.</li>
+            </ul>
+
+            <h4 style="margin-top:20px">Entregable</h4>
+            <p class="small mb-0">Documento de concepción de máximo dos páginas con: nombre del equipo, lista de integrantes y roles, descripción del reto en palabras del equipo, estrategia general de diseño y criterios de éxito para la competencia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DISEÑAR ===================== -->
+    <section id="disenar">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Etapa D</span>
+          <h2>Diseñar</h2>
+          <p>Aquí se responde una sola pregunta: ¿cómo vamos a construir la solución? Los equipos desarrollan el diseño digital completo del robot antes de tocar una sola pieza.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Herramientas obligatorias</h3>
+            <p class="small"><strong>Bricklink Studio 2.0</strong> para el diseño mecánico y estructural del robot.</p>
+            <p class="small mb-0"><strong>Open Roberta Lab</strong> para la programación del brick EV3 mediante bloques gráficos.</p>
+            <h4 style="margin-top:20px">El diseño debe cumplir</h4>
+            <ul class="small mb-0">
+              <li>Dimensiones máximas de 20 cm × 20 cm.</li>
+              <li>Uso exclusivo de piezas disponibles en el kit EV3.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Entregables</h3>
+            <ol class="small mb-0">
+              <li>Archivo digital del diseño en Studio 2.0, nombrado <code>CONSTRUCCION_GX</code>.</li>
+              <li>Imagen renderizada del robot, nombrada <code>RENDER_GX</code>.</li>
+              <li>Lista de piezas (BOM) en PDF, nombrada <code>PIEZAS_GX</code>.</li>
+              <li>Tabla de costos en Excel con el costo total, nombrada <code>COSTOS_GX</code>.</li>
+              <li>Programa en bloques del EV3 exportado desde Open Roberta Lab en XML, nombrado <code>PROGRAMA_GX</code>.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="callout" style="margin-top:26px">
+          <p>Los cinco archivos se comprimen en una carpeta llamada <code>DISEÑO_GX</code>, donde X es el número del grupo. La lista de piezas define las únicas piezas que el equipo puede usar para construir: si necesitan más, deben reportarlo para sumarlo a los costos.</p>
+        </div>
+
+        <p style="margin-top:20px"><a class="btn btn-ghost btn-sm" href="assets/docs/guia-practica-etapa-diseno.docx" download>Descargar la guía práctica de la etapa de diseño</a></p>
+      </div>
+    </section>
+
+    <!-- ===================== IMPLEMENTAR ===================== -->
+    <section id="implementar" class="alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Etapa I</span>
+          <h2>Implementar</h2>
+          <p>Los equipos construyen físicamente el robot utilizando el kit EV3 asignado, siguiendo el diseño que ya fue aprobado.</p>
+        </div>
+
+        <div class="grid grid-2" style="align-items:start">
+          <div>
+            <h3>Actividades</h3>
+            <ul class="small">
+              <li>Ensamble del robot según el diseño aprobado.</li>
+              <li>Ajustes mecánicos necesarios.</li>
+              <li>Verificación del cumplimiento de dimensiones.</li>
+            </ul>
+            <h4>Entregable</h4>
+            <p class="small">Robot físico ensamblado y funcional.</p>
+          </div>
+
+          <figure style="margin:0">
+            <div class="figure-frame">
+              <img src="assets/img/galeria2.jpg" alt="Robot construido con el kit LEGO Mindstorms EV3 sobre una mesa de trabajo"
+                   loading="lazy" width="1400" height="1050">
+            </div>
+            <figcaption class="small" style="margin-top:8px">Robot ensamblado con sensor ultrasónico y sensor de color montados sobre el chasis.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== OPERAR ===================== -->
+    <section id="operar">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Etapa O</span>
+          <h2>Operar</h2>
+          <p>Los robots participan en una competencia de seguimiento de línea tipo velocista. La validación no es una nota en papel: es la pista.</p>
+        </div>
+
+        <div class="grid grid-2" style="align-items:start">
+          <figure style="margin:0">
+            <div class="figure-frame">
+              <img src="assets/img/galeria5.jpg" alt="Estudiantes observando un robot recorrer la pista durante la competencia"
+                   loading="lazy" width="1400" height="932">
+            </div>
+            <figcaption class="small" style="margin-top:8px">Jornada de competencia en la Facultad de Ingeniería.</figcaption>
+          </figure>
+
+          <div class="card">
+            <h3>Reglas generales</h3>
+            <ul class="small">
+              <li>El robot debe seguir correctamente la línea.</li>
+              <li>Gana el equipo que complete el recorrido en el menor tiempo.</li>
+              <li>El robot debe cumplir la restricción de 20 cm × 20 cm.</li>
+            </ul>
+            <h4>Calibración previa</h4>
+            <ul class="small mb-0">
+              <li>Ajustar los valores de blanco y negro del sensor según la iluminación del salón.</li>
+              <li>Verificar la estabilidad del seguimiento antes de la ronda oficial.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CRONOGRAMA ===================== -->
+    <section class="alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-num">Cronograma</span>
+          <h2>Cuatro semanas, cuatro etapas</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th scope="col">Semana</th><th scope="col">Etapa</th><th scope="col">Entregable</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Semana 1</td><td>Concepción</td><td>Documento de concepción</td></tr>
+              <tr><td>Semana 2</td><td>Diseño</td><td>Diseño digital y tabla de costos</td></tr>
+              <tr><td>Semana 3</td><td>Implementación</td><td>Robot físico</td></tr>
+              <tr><td>Semana 4</td><td>Operación</td><td>Competencia</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <img src="assets/img/logo.png" alt="">
+              <span class="footer-brand-text">Universidad Surcolombiana<br>Facultad de Ingeniería</span>
+            </div>
+            <p>Curso Introducción a la Ingeniería Electrónica (IIE), código BEINEL54. Programa de Ingeniería Electrónica, primer semestre. Curso estructurado bajo el Estándar 4 de la iniciativa CDIO.</p>
+            <p class="small">Docente: Diego Sendoya · Neiva, Huila, Colombia</p>
+          </div>
+
+          <div>
+            <h4>Navegación</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="curso.html">Sobre el curso</a></li>
+              <li><a href="cdio.html">Metodología CDIO</a></li>
+              <li><a href="unidades.html">Unidades temáticas</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Material</h4>
+            <ul class="footer-links">
+              <li><a href="recursos.html#talleres">Talleres de Arduino</a></li>
+              <li><a href="recursos.html#lego">Inventario LEGO EV3</a></li>
+              <li><a href="proyectos.html">Retos y proyectos</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© <span data-year>2026</span> Universidad Surcolombiana · Facultad de Ingeniería</p>
+      <p>Sitio web elaborado por Sofía Claros - María Magdalena</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
